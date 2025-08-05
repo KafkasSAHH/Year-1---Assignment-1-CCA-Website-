@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #e8e4c9
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.NavMenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-wrap:nowrap;
+}
+
+.navLink{
+    transition: 0.5s ease-in-out;
+}
+
+.navLink:hover{
+    color:#04688d;
+}
+
+.NavSideBar{
+    display: none;
+    cursor: pointer;  
+}
+
+.Bar{
+    display: block;
+    width: 30px;
+    height:5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.NavSideBar{
+    display:block;
+}
+
+.NavSideBar.active .Bar:nth-child(2){
+    opacity: 0;
+}
+
+ .NavSideBar.active .Bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+
+.NavSideBar.active .Bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.NavMenu{
+    position: fixed;
+    right: -25%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #e8e4c9;
+    width: 25%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navItem{
+    margin-left: 0;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-family: "Consolas", "Courier New", monospace;
+    font-weight: bold;
+}
+
+.NavMenu.active{
+    right: 0;
+}
+
+.navIcons{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
