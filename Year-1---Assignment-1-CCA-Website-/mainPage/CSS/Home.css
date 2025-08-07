@@ -1,20 +1,3 @@
-footer {
-    margin-top: auto;
-    display: block;
-    padding: 20px;
-    height: 25vw;
-    color: aliceblue;
-    background-color: rgb(40, 40, 255);
-}
-
-.nav-menu p:hover {
-    color: #e63946;
-}
-
-.nav-menu p:hover::after {
-    width: 100%;
-}
-
 main {
     padding-top: 100px;
     margin: 0;
