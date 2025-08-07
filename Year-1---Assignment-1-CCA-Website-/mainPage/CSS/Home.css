@@ -37,6 +37,7 @@ footer {
 }
 
 footer table {
+    column-width: 100%;
     font-size: 1vw;
     border: 1px solid aliceblue;
 }
