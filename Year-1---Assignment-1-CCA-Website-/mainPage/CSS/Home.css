@@ -1,124 +1,124 @@
-/* Navigation Bar with Logo on Right */
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between; /* This separates logo and nav */
     align-items: center;
-    padding: 15px 5%;
+    padding: 10px 5%;
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    min-height: 80px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
 }
 
 .logo {
-    height: 60px;
+    height: 70px;
     width: auto;
-    margin-left: auto; /* This pushes the logo all the way to the right */
-    margin-right: 100000000000px; /* Adds extra right margin to push it further */
+    max-height: 80px;
+    transition: all 0.3s ease;
 }
 
-header div {
+.logo:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.nav-menu {
     display: flex;
-    gap: 30px;
-    /* No need for margin adjustments with grid */
+    gap: 35px;
+    margin-left: auto;
 }
 
-header div p {
+.nav-menu p {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #333;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 8px 0;
     position: relative;
 }
 
-/* Hover effects */
-.a:hover {
-    color: #e63946;
-    transition: color 0.3s ease;
-}
-
-.a::after {
+.nav-menu p::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     background-color: #e63946;
     transition: width 0.3s ease;
 }
 
-.a:hover::after {
+.nav-menu p:hover {
+    color: #e63946;
+}
+
+.nav-menu p:hover::after {
     width: 100%;
 }
 
-/* Adjust main content padding */
 main {
     padding-top: 100px;
+    margin: 0;
 }
 
 .banner {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 footer {
     margin-top: auto;
-    display: block;
-    padding: 20px;
-    height: 25vw;
+    padding: 40px 5%;
     color: aliceblue;
     background-color: rgb(40, 40, 255);
 }
 
-footer table {
-
-    table-layout: fixed;
-    width: 100%;
-    font-size: 1vw;
-    border-collapse: collapse;
-}
-
-table, tr, td {
-    border: 1px solid aliceblue;
-}
-
 footer h1 {
     text-align: left;
-    font-size: 3vw;
+    font-size: 28px;
+    margin-bottom: 20px;
     color: aliceblue;
 }
 
-
-
-.banner {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.logo{
-    max-width: 25%;
-    max-height: 25%;
-    display: block;
-    margin: auto;
-}
-
-main {
-    padding-top: 60px; /* Adjust this value based on your header height */
-    margin: 0;
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .footerImg {
-    margin: 2px;
-    width: 2vw;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
 }
 
+.footerImg:hover {
+    transform: scale(1.2);
+}
+
+.footer-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.footer-table, .footer-table tr, .footer-table td {
+    border: 1px solid aliceblue;
+}
+
+.footer-table td {
+    padding: 10px;
+}
