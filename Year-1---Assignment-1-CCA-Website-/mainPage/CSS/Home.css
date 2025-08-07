@@ -1,30 +1,72 @@
+/* Navigation Bar with Logo on Right */
 header {
     position: fixed;
-    padding: 0 24% .5% 24%;
-    background-color: #e8e4c9;
-    box-shadow: 0px 3px 5px gray, 5px 3px 5px gray, -5px 3px 5px gray;
-    border-radius: 10px;
-    top: 1%;
-    left: 1%;
-    right: 1%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* This separates logo and nav */
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-left: auto; /* This pushes the logo all the way to the right */
+    margin-right: 100000000000px; /* Adds extra right margin to push it further */
 }
 
 header div {
-    display: block;
-    margin:auto;
-    text-align: center;
-}
-header div p {
-    font-weight: bold;
-    display: inline;
-    margin-left: 3vw;
-    font-size: 1vw;
+    display: flex;
+    gap: 30px;
+    /* No need for margin adjustments with grid */
 }
 
-.a:hover {
+header div p {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
     cursor: pointer;
-    color: orangered;
-    transition: 0.3s;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Hover effects */
+.a:hover {
+    color: #e63946;
+    transition: color 0.3s ease;
+}
+
+.a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #e63946;
+    transition: width 0.3s ease;
+}
+
+.a:hover::after {
+    width: 100%;
+}
+
+/* Adjust main content padding */
+main {
+    padding-top: 100px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer {
@@ -71,9 +113,8 @@ footer h1 {
 }
 
 main {
-    padding: 0;
+    padding-top: 60px; /* Adjust this value based on your header height */
     margin: 0;
-    
 }
 
 .footerImg {
