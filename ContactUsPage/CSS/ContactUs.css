@@ -1,0 +1,48 @@
+.exec-table {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.exec-table tr:hover {
+  background-color: #fff8f8;
+}
+
+.breadcrumb {
+  padding: 0.75rem 0;
+}
+
+.breadcrumb-item a {
+  color: #ff0000;
+}
+
+.breadcrumb-item a:hover {
+  color: #910606;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+.schedule {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.schedule h2 {
+  color: #dc3545;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.schedule h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 3px;
+  background-color: #dc3545;
+}
