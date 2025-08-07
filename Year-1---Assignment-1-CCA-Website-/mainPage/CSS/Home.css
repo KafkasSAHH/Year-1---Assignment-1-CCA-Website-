@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
     margin-top: auto;
     display: block;
@@ -17,6 +18,11 @@ footer table {
 
 table, tr, td {
     border: 1px solid aliceblue;
+=======
+main {
+    padding-top: 100px;
+    margin: 0;
+>>>>>>> 6b1cb89e2d574da5e0174aedc176dd38b1d2da3e
 }
 
 footer h1 {
