@@ -22,7 +22,7 @@ header div p {
 }
 
 .a:hover {
-    cursor: grab;
+    cursor: pointer;
     color: orangered;
     transition: 0.3s;
 }
@@ -41,11 +41,15 @@ footer table {
     font-size: 1vw;
     border: 1px solid aliceblue;
 }
-footer div {
+
+
+footer h1 {
     text-align: left;
     font-size: 3vw;
     color: aliceblue;
 }
+
+
 
 .banner {
     width: 100%;
@@ -65,5 +69,9 @@ main {
     padding: 0;
     margin: 0;
     
+}
+
+.footerImg {
+    width: 4vw;
 }
 
