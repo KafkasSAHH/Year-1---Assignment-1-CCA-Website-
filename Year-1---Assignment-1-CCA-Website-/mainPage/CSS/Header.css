@@ -1,6 +1,6 @@
 header {
     position: fixed;
-    padding: 0 24% .5% 24%;
+    padding: 0 0 0 0;
     background-color: #e8e4c9;
     box-shadow: 0px 3px 5px gray, 5px 3px 5px gray, -5px 3px 5px gray;
     border-radius: 10px;
@@ -10,15 +10,20 @@ header {
 }
 
 header div {
-    display: block;
-    margin:auto;
     text-align: center;
+    display: flex;
+    gap: 30px;
 }
 header div p {
+    margin: 0;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
     font-weight: bold;
     display: inline;
     margin-left: 3vw;
-    font-size: 1vw;
+    font-size: calc(0.8vw + 0.8vh);
 }
 
 .a:hover {
@@ -26,3 +31,10 @@ header div p {
     color: orangered;
     transition: 0.3s;
 }
+
+.logo {
+    width: auto;
+    margin-left: auto; /* This pushes the logo all the way to the right */
+    margin-right: 100000000000px; /* Adds extra right margin to push it further */
+}
+

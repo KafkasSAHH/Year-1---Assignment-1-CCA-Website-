@@ -7,231 +7,47 @@ footer {
     background-color: rgb(40, 40, 255);
 }
 
-.nav-menu p:hover {
-    color: #e63946;
-}
+footer table {
 
-.nav-menu p:hover::after {
+    table-layout: fixed;
     width: 100%;
+    font-size: 1vw;
+    border-collapse: collapse;
 }
 
-main {
-    padding-top: 100px;
-    margin: 0;
+table, tr, td {
+    border: 1px solid aliceblue;
 }
+
+footer h1 {
+    text-align: left;
+    font-size: 3vw;
+    color: aliceblue;
+}
+
+
 
 .banner {
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    max-width: 25%;
+    max-height: 25%;
     display: block;
-    max-height: 700px;
-    object-fit: cover;
+    margin: auto;
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    padding: 40px 5% 20px;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-}
-
-.footer-section h3 {
-    color: #e63946;
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #444;
-}
-
-.footer-links {
-    list-style: none;
+main {
     padding: 0;
     margin: 0;
+
 }
 
-.footer-links li {
-    margin-bottom: 8px;
-}
-
-.footer-links a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: white;
-}
-
-.social-media {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-}
-
-.footer-bottom {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #444;
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-}
-
-.contact-info {
-    margin-top: 15px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-}
-
-.contact-icon {
-    margin-right: 10px;
-    width: 16px;
-}
-
-.hover-white:hover {
-    color: white !important;
-    transition: color 0.2s ease;
-}
-
-.hover-red:hover {
-    color: #e63946 !important;
-    transition: color 0.2s ease;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    margin-right: 8px;
-}
-
-.social-icons a:hover {
-    background: rgba(230,57,70,0.2);
-    transform: translateY(-3px);
-}
-
-.border-secondary {
-    border-color: #444 !important;
-}
-.banner-container {
-    position: relative;
-    width: 100%;
-}
-
-.banner-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    width: 80%;
-}
-
-.banner-overlay h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-    margin-bottom: 1rem;
-}
-
-.banner-overlay p {
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 768px) {
-    .banner-overlay h1 {
-        font-size: 2rem;
-    }
-    .banner-overlay p {
-        font-size: 1rem;
-    }
-}
-.cta-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 35px;
-    margin-top: 25px;
-    background: linear-gradient(135deg, #e63946 0%, #c1121f 100%);
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(198, 15, 34, 0.4);
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-button span {
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
-}
-
-.cta-button i {
-    margin-left: 10px;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 2;
-}
-
-/* Hover Effects */
-.cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(198, 15, 34, 0.6);
-}
-
-.cta-button:hover span {
-    letter-spacing: 0.5px;
-}
-
-.cta-button:hover i {
-    transform: translateX(5px);
-}
-
-/* Pulse Animation */
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7); }
-    70% { box-shadow: 0 0 0 12px rgba(230, 57, 70, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
-}
-
-.cta-button:focus {
-    animation: pulse 1s;
-    outline: none;
+.footerImg {
+    margin: 2px;
+    width: 2vw;
 }
