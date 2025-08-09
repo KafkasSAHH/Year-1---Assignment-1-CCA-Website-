@@ -12,6 +12,11 @@ header {
     width: 100%;
 }
 
+header div p {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -35,14 +40,10 @@ header {
 
 .nav-menu .a {
     margin: 0;
-    font-weight: 700;
     color: #333;
     cursor: pointer;
-    transition: all 0.3s;
     position: relative;
     padding: 00px 0;
-    font-size: 1.3rem;
-
 }
 
 .nav-menu .a:hover {
