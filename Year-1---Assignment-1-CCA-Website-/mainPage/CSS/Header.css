@@ -1,44 +1,70 @@
-header {
-    position: fixed;
-    padding: 0 0 0 0;
-    background-color: #e8e4c9;
-    box-shadow: 0px 3px 5px gray, 5px 3px 5px gray, -5px 3px 5px gray;
-    border-radius: 10px;
-    top: 1%;
-    left: 1%;
-    right: 1%;
-    height: calc(50px + 2.5vw);
-    overflow: visible;
-    z-index: 1000; /* Ensure header is above other content */
-}
-
-header div {
-    text-align: center;
-    display: flex;
-    gap: 30px;
-}
-
-header div p {
+body {
     margin: 0;
-    color: #333;
-    cursor: pointer;
-    padding: 10px 0;
-    position: relative;
-    font-weight: bold;
-    display: inline;
-    margin-left: 3vw;
-    font-size: calc(0.8vw + 0.8vh);
+    padding: 0;
 }
 
-.a:hover {
-    cursor: pointer;
-    color: orangered;
-    transition: 0.3s;
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .logo {
-    width: auto;
-    margin-left: auto; /* This pushes the logo all the way to the right */
-    margin-right: 100000000000px; /* Adds extra right margin to push it further */
+    width: 20vw;
+    float: left;
+    padding-left: 2vw;
+    display: block;
+    margin: auto;
 }
 
+.nav-menu {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    right: 2vw;
+}
+
+.nav-menu .a {
+    margin: 0;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    padding: 00px 0;
+    font-size: 1.3rem;
+
+}
+
+.nav-menu .a:hover {
+    color: #dc3545;
+}
+
+.nav-menu .a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: #dc3545;
+    transition: width 0.3s;
+}
+
+.nav-menu .a:hover:after {
+    width: 100%;
+}
+
+.banner-container {
+    position: relative;
+    margin-top: 0;
+}
